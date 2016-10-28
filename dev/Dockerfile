@@ -21,4 +21,4 @@ RUN echo "[doc]\
 EXPOSE 137 138 139 445 3000 3123 8000 8080
 
 # Start smb
-ENTRYPOINT ["/opt/startup"]
+# ENTRYPOINT ["/opt/startup"]
