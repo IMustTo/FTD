@@ -1,5 +1,5 @@
 # Pull base image
-FROM base:0.0.1
+FROM base
 
 MAINTAINER chen xin
 

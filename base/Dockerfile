@@ -14,6 +14,9 @@ RUN apt-get update
 # Install curl
 RUN apt-get install -y curl
 
+# Install vim
+RUN apt-get install -y vim
+
 # Install version managers git && subversion
 RUN apt-get install -y git
 RUN apt-get install -y subversion

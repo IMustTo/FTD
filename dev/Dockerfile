@@ -1,5 +1,5 @@
 # Pull base image
-FROM nodejs:latest
+FROM pkg
 
 # Startup
 ADD startup /opt
