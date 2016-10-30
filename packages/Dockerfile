@@ -10,8 +10,5 @@ RUN npm i -g forever
 # nodemon: 自启动
 RUN npm i -g nodemon
 
-# eslint: ES6代码检查
-RUN npm i -g eslint
-
 # vue-cli: vuejs模板脚手架
 RUN npm i -g vue-cli

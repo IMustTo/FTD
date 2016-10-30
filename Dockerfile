@@ -40,4 +40,4 @@ RUN n stable
 EXPOSE 137 138 139 445 3000 3123 8000 8080
 
 # Start smb
-ENTRYPOINT (echo 123;echo 123) | smbpasswd -s -a root && service smbd restart && service nmbd restart
+#ENTRYPOINT (echo 123;echo 123) | smbpasswd -s -a root && service smbd restart && service nmbd restart
