@@ -1,5 +1,6 @@
 #!/bin/bash
 
 (echo 123;echo 123) | smbpasswd -s -a root
-service smbd start
-service nmbd start
+
+/usr/sbin/smbd -F -S
+/usr/sbin/nmbd -F -S
