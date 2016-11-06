@@ -5,7 +5,7 @@ FROM debian
 MAINTAINER chen xin
 ```
 
-# update source  
+# Update source  
 
 ``` bash
 RUN echo "deb http://mirrors.aliyun.com/debian/ jessie main non-free contrib\
@@ -19,6 +19,7 @@ RUN apt-get update
 ``` bash
 RUN apt-get -y install curl  
 
+# Install npm & node
 RUN apt-get install -y npm
 ```
 ``` bash
