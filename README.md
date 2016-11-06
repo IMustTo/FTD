@@ -18,8 +18,10 @@ RUN apt-get update
 # Install curl
 ``` bash
 RUN apt-get -y install curl  
+```
 
 # Install npm & node
+``` bash
 RUN apt-get install -y npm
 ```
 ``` bash
