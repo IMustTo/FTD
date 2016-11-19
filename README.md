@@ -1,31 +1,8 @@
-# Pull base image
-``` bash
-FROM debian
-  
-MAINTAINER chen xin
-```
-
-# Update source  
+# 启动方式
 
 ``` bash
-RUN echo "deb http://mirrors.aliyun.com/debian/ jessie main non-free contrib\
-\ndeb http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib\
-\ndeb-src http://mirrors.aliyun.com/debian/ jessie main non-free contrib\
-\ndeb-src http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib"> /etc/apt/sources.list  
-RUN apt-get update
+docker run -t -i --privileged -p 137-139:137-139/tcp -p 445:445/tcp -p 3000:3000/tcp -p 3123:3123/tcp -p 8000:8000/tcp -p 8080:8080/tcp -d --name dev -v /e/GitSpace/docker/share:/share dev /bin/bash
 ```
 
-# Install curl
-``` bash
-RUN apt-get -y install curl  
-```
+## 访问 \\:192.168.99.100
 
-# Install npm & node
-``` bash
-RUN apt-get install -y npm
-```
-``` bash
-RUN npm i -g n --registry=http://registry.npm.taobao.org/
-
-RUN n stable
-```

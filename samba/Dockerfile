@@ -4,8 +4,8 @@ FROM pkg
 # Install samba
 RUN apt-get install -y samba
 
-RUN echo "[doc]\
-\npath = /home\
+RUN echo "[share]\
+\npath = /share\
 \navailable = yes\
 \nvalid users = root\
 \nread only = no\
